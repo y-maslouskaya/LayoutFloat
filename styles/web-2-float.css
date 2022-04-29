@@ -1,0 +1,145 @@
+@import url(reset.css);
+
+
+/* -----------Clearfix----------- */
+section.top::after,
+section.bottom::after,
+section.dots::after,
+section.services::after,
+section.recent::after,
+footer::after {
+display: table;
+clear: both;
+content: '';
+
+}
+
+/* -----------Genereal styles----------- */
+
+header,
+section.top,
+.dot,
+section.services>article,
+section.recent>article,
+section.twitter>article,
+footer {
+background: lightgray;
+}
+
+header,
+section.top,
+section.dots,
+section.services,
+section.recent,
+section.twitter {
+margin-bottom: 1.5em;
+}
+
+/* -----------Header styles----------- */
+
+header {
+width: 100%;
+min-height: 10em;
+padding: 1em 3em;
+margin-bottom: 1.5em;
+}
+
+/* logo styles */
+header a {
+text-decoration: none;
+color: black;
+font-size: 1.5em;
+}
+
+section.logo {
+float: left;
+}
+
+/* navigation styles */
+header nav ul { float:right;}
+header nav li {
+margin-right: 1em;
+float:left;}
+
+header nav li:last-child {
+margin-right: 0;
+}
+
+/* intro styles */
+header article {
+width: 30%;
+margin-right: 1.5em;
+float: left;
+}
+
+section.bottom h1 {font-size: 2em;}
+
+/* figure styles */
+header figure {
+background: grey;
+width: calc(70% - 1.5em);
+min-height: 6em;
+float: right;
+text-align: center;
+line-height: 6em;
+}
+
+/* -----------Main styles----------- */
+
+main {padding: 0 3em ;}
+
+/* dots styles */
+.dot {
+height: .5em;
+width: .5em;
+border-radius: 50%;
+display: block;
+float: right;
+margin-right: .5em;
+}
+
+/* articles styles */
+main section {
+width: 100%;
+}
+
+section.services>article,
+section.recent>article {
+width: calc((100% - 3em) / 3);
+min-height: 7em;
+float: left;
+margin-right: 1.5em;
+text-align: center;
+line-height: 7em;
+}
+
+section.services>article:last-child,
+section.recent>article:last-child {
+margin-right: 0;
+}
+
+section.twitter>article {
+min-height: 4em;
+text-align: center;
+line-height: 4em;
+}
+
+/* -----------Footer styles----------- */
+
+/* footer navigation styles */
+footer {
+width: 100%;
+min-height: 4em;
+padding: 2em 3em;
+}
+
+footer nav li {
+margin-right: 1em;
+float:left;}
+
+footer nav li:last-child {
+margin-right: 0;
+}
+
+/* footer copyright styles */
+footer p{ float: right;}

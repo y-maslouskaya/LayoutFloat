@@ -1,0 +1,91 @@
+@import url(reset.css);
+
+
+/* -----------Clearfix----------- */
+nav>ul::after, main::after {
+display: table;
+clear: both;
+content: '';
+
+}
+
+/* -----------Genereal styles----------- */
+
+section.logo, header, nav li, main article, footer {
+background: gray;
+text-align: center;
+}
+
+/* -----------Company logo styles----------- */
+section.logo {
+width: 100%;
+min-height: 4em;
+line-height: 4em;
+margin-bottom: 1em;
+}
+
+/* -----------Header styles----------- */
+
+header {
+width: 100%;
+min-height: 8em;
+line-height: 8em;
+margin-bottom: 1em;
+}
+
+/* -----------Navigation styles----------- */
+
+nav>ul {
+width: 100%;
+margin-bottom: 1em;}
+
+nav li {
+width: calc((100% - 1.5em * 3) / 4);
+min-height: 2em;
+line-height: 2em;
+float: left;
+margin-right: 1.5em;
+}
+
+nav li:last-of-type {
+margin-right: 0;
+}
+
+/* -----------Main styles----------- */
+main {
+width: 100%;
+margin-bottom: 1em;}
+
+
+/* section "about" styles */
+main>section.about{
+width: 60%;
+min-height: 10em;
+line-height: 10em;
+float: left;
+margin-right: 1.5em;}
+
+/* section "links" styles */
+main>section.links{
+width: calc(40% - 1.5em);
+float: right;
+}
+
+main>section.links>article:nth-child(1) {
+min-height: 3.5em;
+line-height: 3.5em;
+margin-bottom: 1.5em;
+}
+
+main>section.links>article:nth-child(2) {
+min-height: 5em;
+line-height: 5em;
+}
+
+/* -----------Footer styles----------- */
+
+footer {
+width: 100%;
+min-height: 4em;
+line-height: 4em;
+} 
